@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eee5d8">
+
+  <title>Алинур & Айла — Wedding Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- FIRST SCREEN: ENVELOPE -->
+
+  <section class="intro" id="intro">
+
+    <div class="intro-card">
+
+      <img
+        class="intro-art"
+        src="assets/envelope-seal.jpeg"
+        alt="Wedding invitation envelope"
+      >
+
+      <div class="intro-copy">
+
+        <span class="intro-kicker">
+          С любовью приглашаем
+        </span>
+
+        <span class="intro-names">
+          Алинур <i>&</i> Айла
+        </span>
+
+        <span class="intro-hint">
+          Нажмите на печать, чтобы открыть
+        </span>
+
+      </div>
+
+      <button
+        class="seal-button"
+        id="openInvitation"
+        aria-label="Открыть приглашение"
+      >
+        <span class="seal-inner">
+          ♡
+        </span>
+      </button>
+
+    </div>
+
+    <p class="intro-footer">
+      WEDDING INVITATION · 16.11.2026
+    </p>
+
+  </section>
+
+
+  <!-- MAIN WEBSITE -->
+
+  <main class="site hidden" id="site">
+
+    <header class="topline">
+      <span>THE WEDDING OF</span>
+      <span>16 · 11 · 2026</span>
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero section reveal">
+
+      <p class="eyebrow">
+        С любовью и радостью
+      </p>
+
+      <h1>
+        Алинур <span>&</span> Айла
+      </h1>
+
+      <div class="ornament">
+        ✦ &nbsp; ✧ &nbsp; ✦
+      </div>
+
+      <p class="hero-text">
+        Приглашаем вас разделить с нами<br>
+        самый важный и счастливый день
+      </p>
+
+      <p class="hero-date">
+        16 ноября 2026
+      </p>
+
+      <p class="hero-time">
+        16:00
+      </p>
+
+      <a href="#story" class="scroll-cue">
+        ↓
+      </a>
+
+    </section>
+
+
+    <!-- COUPLE PHOTO -->
+
+    <section class="photo-section reveal" id="story">
+
+      <div class="photo-frame wide-frame">
+
+        <img
+          src="assets/couple-hands.jpeg"
+          alt="Алинур и Айла"
+          loading="lazy"
+        >
+
+      </div>
+
+      <p class="photo-caption">
+        Две судьбы · одна история
+      </p>
+
+    </section>
+
+
+    <!-- INVITATION TEXT -->
+
+    <section class="message section reveal">
+
+      <p class="eyebrow">
+        Дорогие родные и близкие!
+      </p>
+
+      <h2>
+        Будем рады видеть вас
+      </h2>
+
+      <div class="thin-line"></div>
+
+      <p class="message-text">
+        В этот особенный день мы хотим быть рядом
+        с самыми дорогими людьми.
+
+        Будем счастливы разделить с вами
+        радость нашего торжества.
+      </p>
+
+      <p class="signature">
+        Алинур & Айла
+      </p>
+
+    </section>
+
+
+    <!-- WEDDING DATE -->
+
+    <section class="details section reveal">
+
+      <p class="eyebrow">
+        Сохраните дату
+      </p>
+
+      <h2>
+        День нашей свадьбы
+      </h2>
+
+      <div class="date-card">
+
+        <span class="date-month">
+          НОЯБРЬ
+        </span>
+
+        <strong>16</strong>
+
+        <span class="date-year">
+          2026
+        </span>
+
+        <span class="date-weekday">
+          ПОНЕДЕЛЬНИК
+        </span>
+
+      </div>
+
+      <div class="details-grid">
+
+        <div>
+          <span class="detail-label">НАЧАЛО</span>
+          <strong>16:00</strong>
+        </div>
+
+        <div>
+          <span class="detail-label">ГОРОД</span>
+          <strong>Ош</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- COUNTDOWN -->
+
+    <section class="countdown-section section reveal">
+
+      <p class="eyebrow">
+        До нашей встречи осталось
+      </p>
+
+      <div class="countdown" id="countdown">
+
+        <div>
+          <strong id="days">--</strong>
+          <span>дней</span>
+        </div>
+
+        <i>:</i>
+
+        <div>
+          <strong id="hours">--</strong>
+          <span>часов</span>
+        </div>
+
+        <i>:</i>
+
+        <div>
+          <strong id="minutes">--</strong>
+          <span>минут</span>
+        </div>
+
+        <i>:</i>
+
+        <div>
+          <strong id="seconds">--</strong>
+          <span>секунд</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LOCATION -->
+
+    <section class="location section reveal">
+
+      <div class="photo-frame portrait-frame">
+
+        <img
+          src="assets/couple-portrait.jpeg"
+          alt="Wedding couple"
+          loading="lazy"
+        >
+
+      </div>
+
+      <p class="eyebrow">
+        Место торжества
+      </p>
+
+      <h2>
+        Ресторан «Эльдорадо»
+      </h2>
+
+      <p class="location-city">
+        Ош, Кыргызстан
+      </p>
+
+      <a
+        class="map-button"
+        href="https://www.google.com/maps/search/?api=1&query=Ресторан+Эльдорадо+Ош+Кыргызстан"
+        target="_blank"
+        rel="noopener"
+      >
+        Открыть карту ↗
+      </a>
+
+    </section>
+
+
+    <!-- WEDDING HOSTS -->
+
+    <section class="hosts section reveal">
+
+      <p class="eyebrow">
+        С уважением и любовью
+      </p>
+
+      <h2>
+        Той ээлери
+      </h2>
+
+      <p class="hosts-names">
+        Насыр <span>&</span> Назира
+      </p>
+
+    </section>
+
+
+    <!-- FINAL SECTION -->
+
+    <section class="rsvp section reveal">
+
+      <p class="eyebrow">
+        Будем ждать вас
+      </p>
+
+      <h2>
+        До скорой встречи!
+      </h2>
+
+      <p class="message-text">
+        Спасибо, что разделяете с нами
+        этот счастливый момент.
+      </p>
+
+      <a
+        class="map-button"
+        href="https://www.google.com/maps/search/?api=1&query=Ресторан+Эльдорадо+Ош+Кыргызстан"
+        target="_blank"
+        rel="noopener"
+      >
+        Как добраться
+      </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+      <div class="ornament">
+        ✦ &nbsp; ✧ &nbsp; ✦
+      </div>
+
+      <p>
+        С любовью, Алинур & Айла
+      </p>
+
+      <span>
+        16 · 11 · 2026
+      </span>
+
+    </footer>
+
+  </main>
+
+
+  <!-- MUSIC BUTTON -->
+
+  <button
+    class="music-toggle"
+    id="musicToggle"
+    aria-label="Включить или выключить музыку"
+    hidden
+  >
+
+    <span class="music-icon">♫</span>
+    <span class="music-label">Музыка</span>
+
+  </button>
+
+
+  <!-- MUSIC FILE -->
+
+  <audio
+    id="weddingMusic"
+    src="assets/dan-balan-lyubi.mp3"
+    preload="auto"
+    loop
+  ></audio>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
